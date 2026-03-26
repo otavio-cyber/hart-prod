@@ -1,0 +1,54 @@
+/* =============================================
+   HART Construções Metálicas — Custom Styles
+   Consolidado a partir de blocos <style> inline
+   ============================================= */
+
+:root { --primary: #0A1628; }
+
+.section-title, .section-title span, .clients .item h5,
+.certifications .item h6, .services .item h5 { color: var(--primary) !important; }
+
+.services .item .icon svg, .certifications .item svg { stroke: var(--primary) !important; }
+
+.line { background-color: rgba(10,22,40,.15); height: 2px; margin: 10px auto 16px; width: 60px; }
+
+.services .item .icon svg { transition: all 0.3s ease; transform: scale(1); }
+.services .item:hover .icon svg { transform: scale(1.1); }
+
+.clients .item { background:#fff; border-radius:12px; padding:40px 20px; text-align:center; transition:all .3s ease; box-shadow:0 4px 12px rgba(0,0,0,.05); }
+.clients .item:hover { transform:scale(1.03); box-shadow:0 6px 16px rgba(0,0,0,.1); }
+.clients .item h5 { font-weight:700; font-size:1.1rem; text-transform:uppercase; margin-bottom:6px; letter-spacing:1px; }
+.clients .item p { color:#6c757d; font-size:.95rem; margin:0; }
+.clients .section-title { text-align:center; margin-bottom:60px; font-weight:700; text-transform:uppercase; font-size:2rem; }
+
+.clients-grid .client-item { text-align:center; padding:25px 15px; background:#fff; border-radius:12px; transition:all .3s ease; box-shadow:0 4px 12px rgba(0,0,0,.05); }
+.clients-grid .client-item:hover { transform:scale(1.04); box-shadow:0 6px 18px rgba(0,0,0,.10); }
+.clients-grid .client-item img { max-width:150px; max-height:80px; opacity:.6; transition:all .3s ease-in-out; }
+.clients-grid .client-item:hover img { filter:grayscale(0%); opacity:1; }
+
+.additional-title { font-size:20px; font-weight:500; margin-bottom:35px; color:#333; }
+.safety-grid { max-width:900px; margin:0 auto; display:grid; grid-template-columns:repeat(5,1fr); gap:18px 20px; justify-items:center; }
+.safety-card { background:#f2f7fa; border:1px solid #e2e6ea; padding:12px 0; width:120px; text-align:center; border-radius:10px; font-weight:600; font-size:15px; color:#333; }
+@media (max-width:768px) { .safety-grid { grid-template-columns:repeat(3,1fr); } }
+@media (max-width:480px) { .safety-grid { grid-template-columns:repeat(2,1fr); } }
+.training-extra { display:flex; justify-content:space-between; max-width:800px; margin:0 auto; font-size:16px; font-weight:500; color:#444; }
+@media (max-width:600px) { .training-extra { flex-direction:column; text-align:center; gap:10px; } }
+
+.cta-wrap { position:relative; overflow:hidden; border-radius:16px; background:linear-gradient(135deg,#0A1628 0%,#0e2446 100%); color:#fff; padding:40px 20px; }
+.cta-wrap h3 { font-size:2rem; margin:0 0 10px; }
+.cta-wrap p { margin:0 0 24px; opacity:.9; }
+.cta-actions a { display:inline-block; padding:12px 22px; border-radius:8px; margin-right:10px; text-decoration:none; transition:transform .2s ease, opacity .2s ease; }
+.cta-actions a.primary { background:#fff; color:#0A1628; font-weight:700; }
+.cta-actions a.secondary { border:1px solid rgba(255,255,255,.6); color:#fff; }
+.cta-actions a:hover { transform:translateY(-2px); opacity:.95; }
+
+.social-icon a { display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius:50%; border:1px solid rgba(255,255,255,.75); margin:0 6px; transition:all .2s ease; }
+.social-icon a svg { color:#fff; opacity:.9; }
+.social-icon a:hover { background:#fff; border-color:#fff; transform:translateY(-2px); }
+.social-icon a:hover svg { color:#0A1628; opacity:1; }
+
+.social-left a svg { color:#fff; opacity:.85; transition:opacity .2s ease; }
+.social-left a:hover svg { opacity:1; }
+
+.whatsapp-float-button { position:fixed; width:60px; height:60px; bottom:20px; right:20px; background-color:#25D366; color:white; border-radius:50%; text-align:center; box-shadow:2px 2px 5px #999; z-index:1000; cursor:pointer; display:flex; align-items:center; justify-content:center; }
+.whatsapp-float-button:hover { background-color:#1ebe57; }
